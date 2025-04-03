@@ -15,8 +15,8 @@ from keras.models import Sequential
 from keras.layers import Dense
 
 # Load datasets
-df1 = pd.read_csv("/kaggle/input/credit-risk-classification-dataset/customer_data.csv")
-df2 = pd.read_csv("/kaggle/input/credit-risk-classification-dataset/payment_data.csv")
+df1 = pd.read_csv("customer_data.csv")
+df2 = pd.read_csv("payment_data.csv")
 
 # Merge on 'id'
 df2['update_date'] = pd.to_datetime(df2['update_date'])
